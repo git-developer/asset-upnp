@@ -6,15 +6,9 @@ variables:
   IMAGE_PLATFORMS: 'linux/amd64,linux/i386,linux/arm/v7'
   APPLICATION_URL: 'http://www.dbpoweramp.com/install/AssetUPnP-Linux-x86.tar.gz'
 
-stages:
-  - setup
-  - prepare
-  - analyze
-  - publish
-
 Collect Additional Tags:
   extends: .docker_support:.with_bare_image
-  stage: analyze
+  stage: post_build
   artifacts:
     paths:
     - tags
