@@ -4,7 +4,7 @@ include:
 variables:
   IMAGE_TITLE: 'Asset UPnP'
   IMAGE_PLATFORMS: 'linux/amd64,linux/i386,linux/arm/v7'
-  APPLICATION_URLS: 'http://www.dbpoweramp.com/install/AssetUPnP-Linux-x86.tar.gz http://www.dbpoweramp.com/install/Asset-RaspberryPi.tar.gz http://www.dbpoweramp.com/install/AssetUPnP-Linux-x64.tar.gz'
+  UPDATE_CHECK_URLS: 'http://www.dbpoweramp.com/install/AssetUPnP-Linux-x86.tar.gz http://www.dbpoweramp.com/install/Asset-RaspberryPi.tar.gz http://www.dbpoweramp.com/install/AssetUPnP-Linux-x64.tar.gz'
 
 Collect Additional Tags:
   extends: .docker_support:.with_bare_image
